@@ -1,0 +1,311 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.h1 {
+    align-items: center;
+}
+
+/* Container to center content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Menu styling to push items to the right */
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    margin-left: auto; /* This pushes the menu to the right */
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-left: 0;
+    }
+
+    section ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section ul li {
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    section ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    section ul li {
+        flex: 1;
+    }
+}
+
+
+/* Education Section */
+#education {
+    margin-top: 2rem;
+}
+
+#education h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Container for the cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between cards */
+}
+
+/* Card styling */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: calc(33.333% - 1rem); /* Three cards per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 1rem); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row on very small screens */
+    }
+}
+
+/* Work Experience Section */
+#experience {
+    margin-top: 2rem;
+}
+
+#experience h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Container for work experience cards */
+.experience-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between cards */
+}
+
+/* Card styling (reusing existing .card class for consistency) */
+.experience-card-container .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: calc(50% - 1rem); /* Two cards per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.experience-card-container .card:hover {
+    transform: scale(1.05);
+}
+
+.experience-card-container .card h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.experience-card-container .card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .experience-card-container .card {
+        width: 100%; /* One card per row on smaller screens */
+    }
+}
+
+
+/* Hobbies Section */
+#hobbies {
+    margin-top: 2rem;
+}
+
+#hobbies h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Container for the hobby badges */
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Hobby badge styling */
+.hobby-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.hobby-badge:hover { 
+    background-color: #b2ebf2;
+}
+
+.hobby-badge .icon {
+    font-size: 1.2rem;
+}
+
+/* Career Prospects Section */
+#career {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#career h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Container for career cards */
+.career-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Styling for each career card */
+.career-card {
+    background-color: #f1f8e9;
+    border: 1px solid #c5e1a5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: calc(50% - 1rem); /* Two cards per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+.career-card h3 {
+    margin-bottom: 0.5rem;
+    color: #558b2f;
+}
+
+.career-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .career-card {
+        width: 100%; /* One card per row on smaller screens */
+    }
+}
